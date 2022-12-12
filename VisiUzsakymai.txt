@@ -1,0 +1,2 @@
+2022-12-11 18:14:41;8;30;Vynas;4,6;Vynas;4,6;Vynas;4,6;Alus;2,2;Alus;2,2;18,2
+2022-12-11 18:28:28;2;25;Cepelinai;4;Cepelinai;4;Cepelinai;4;Cepelinai;4;Cepelinai;4;Cepelinai;4;24

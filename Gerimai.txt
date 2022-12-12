@@ -1,0 +1,4 @@
+Alus;2,2
+Vynas;4,6
+Arbata;1,9
+Coca-cola;1,4

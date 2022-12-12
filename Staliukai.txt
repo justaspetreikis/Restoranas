@@ -1,0 +1,8 @@
+1;6;true
+2;6;true
+3;6;false
+4;4;true
+5;4;true
+6;4;true
+7;2;true
+8;2;true
