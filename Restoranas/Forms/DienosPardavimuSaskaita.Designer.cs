@@ -1,6 +1,6 @@
-﻿namespace CekiuSpausdinimas
+﻿namespace Restoranas.Forms
 {
-    partial class KlientoCekis
+    partial class DienosPardavimuSaskaitaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.rtb_DienosPardavimai = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // KlientoCekis
+            // rtb_DienosPardavimai
+            // 
+            this.rtb_DienosPardavimai.Location = new System.Drawing.Point(12, 12);
+            this.rtb_DienosPardavimai.Name = "rtb_DienosPardavimai";
+            this.rtb_DienosPardavimai.Size = new System.Drawing.Size(378, 426);
+            this.rtb_DienosPardavimai.TabIndex = 0;
+            this.rtb_DienosPardavimai.Text = "";
+            this.rtb_DienosPardavimai.TextChanged += new System.EventHandler(this.rtb_DienosPardavimai_TextChanged);
+            // 
+            // DienosPardavimuSaskaitaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 450);
-            this.Name = "KlientoCekis";
-            this.Text = "Kliento čekis";
+            this.ClientSize = new System.Drawing.Size(402, 444);
+            this.Controls.Add(this.rtb_DienosPardavimai);
+            this.Name = "DienosPardavimuSaskaitaForm";
+            this.Text = "DienosPardavimuSaskaita";
+            this.Load += new System.EventHandler(this.DienosPardavimuSaskaitaForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private RichTextBox rtb_DienosPardavimai;
     }
 }

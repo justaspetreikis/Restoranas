@@ -43,7 +43,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 450);
+            this.ClientSize = new System.Drawing.Size(402, 444);
             this.Controls.Add(this.rtb_RestoranoSaskaita);
             this.Name = "RestoranoSaskaitaForm";
             this.Text = "RestoranoSaskaita";

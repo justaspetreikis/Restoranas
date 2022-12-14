@@ -138,6 +138,7 @@ namespace Restoranas.Forms
 
         private void RestoranasForm_Load(object sender, EventArgs e)
         {
+
             var stalai = new StaliukasRepozitorija();
             var staliukuInfo = stalai.VisuStaluListas();
             foreach (var stalas in staliukuInfo)
@@ -205,6 +206,12 @@ namespace Restoranas.Forms
                     }
                 }
             }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            var dienosPardavimuSaskaita = new DienosPardavimuSaskaitaForm();
+            dienosPardavimuSaskaita.Show();
         }
     }
 }

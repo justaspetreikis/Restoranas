@@ -38,3 +38,18 @@
 2022-12-14 18:58:14;2;20;Alus;2,2;Alus;2,2;Vynas;4,6;Vynas;4,6;Vynas;4,6;18,2
 2022-12-14 19:08:07;2;5;Alus;2,2;Alus;2,2;4,4
 2022-12-14 19:15:02;2;9;Cepelinai;4;Cepelinai;4;8
+2022-12-14 19:16:12;2;5;Kepta duona;2;2
+2022-12-14 19:17:31;2;5;Arbata;1,9;Arbata;1,9;3,8
+2022-12-14 19:27:53;5;9;Kepta duona;2;Kepta duona;2;Alus;2,2;Alus;2,2;8,4
+2022-12-14 19:30:01;7;4;Arbata;1,9;Arbata;1,9;3,8
+2022-12-14 19:30:30;4;16;Cepelinai;4;Cepelinai;4;Cepelinai;4;Cepelinai;4;16
+2022-12-14 19:30:50;1;20;Alus;2,2;Alus;2,2;Vynas;4,6;Vynas;4,6;Alus;2,2;Alus;2,2;18
+2022-12-14 21:13:53;1;21;Alus;2,2;Alus;2,2;Alus;2,2;Vynas;4,6;Vynas;4,6;Vynas;4,6;20,4
+2022-12-14 21:15:32;5;20;Arbata;1,9;Arbata;1,9;Cepelinai;4;Cepelinai;4;Coca-cola;1,4;Kepta duona;2;15,2
+2022-12-14 21:15:49;3;5;Alus;2,2;Alus;2,2;4,4
+2022-12-14 21:15:59;2;5;Vynas;4,6;4,6
+2022-12-14 21:16:40;1;3;Alus;2,2;2,2
+2022-12-14 21:16:54;8;4;Cepelinai;4;4
+2022-12-14 21:17:01;7;3;Coca-cola;1,4;Coca-cola;1,4;2,8
+2022-12-14 21:17:11;6;7;Kepta duona;2;Alus;2,2;Alus;2,2;6,4
+2022-12-14 21:17:21;4;4;Arbata;1,9;Arbata;1,9;3,8
