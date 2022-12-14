@@ -1,7 +1,7 @@
 ﻿
 using Restoranas.Models;
 using System.Data;
-using static Restoranas.RestoranasForm;
+using static Restoranas.Forms.RestoranasForm;
 using File = System.IO.File;
 using System.Text;
 
@@ -49,17 +49,44 @@ namespace Restoranas.Forms
 
         private void btn_ApmoketiUzsakyma_Click_1(object sender, EventArgs e)
         {
-            UzsakymoIrasymasIVisuUzsakymuFaila();
+            bool pakankamai = ArKlientasPadavePakankamaiPinigu();
 
-            DialogResult uzklausaCekiui = MessageBox.Show("Ar klientui reikalingas čekis?", "Čekio spausdinimas", MessageBoxButtons.YesNo);
-            if (uzklausaCekiui == DialogResult.Yes)
+            if(pakankamai == false)
             {
-                //do something
+                MessageBox.Show("Užsakymo suma didesnė nei paduota kliento suma. Apmokėti nepavyko");
             }
-            else if (uzklausaCekiui == DialogResult.No)
+
+            else
             {
-                //do something else
-            }
+                UzsakymoIrasymasIVisuUzsakymuFaila();
+
+                string path = $@"C:\Users\petre\Desktop\CodeAcademy\Restoranas\Stalo{staliukoNumeris}Uzsakymas.txt";
+
+                if (File.Exists(path))
+                {
+                    File.WriteAllText(path, "");
+                }
+
+                DialogResult uzklausaCekiui = MessageBox.Show("Ar klientui reikalingas čekis?", "Čekio spausdinimas", MessageBoxButtons.YesNo);
+                if (uzklausaCekiui == DialogResult.Yes)
+                {
+                    var klientoCekisForm = new KlientoSaskaitaForm();
+                    klientoCekisForm.Show();
+
+                    var restoranoCekisForm = new RestoranoSaskaitaForm();
+                    restoranoCekisForm.Show();
+                }
+                else if (uzklausaCekiui == DialogResult.No)
+                {
+                    var restoranoCekisForm = new RestoranoSaskaitaForm();
+                    restoranoCekisForm.Show();
+                }
+
+                var ss = new UzsakymasForm();
+                ss.Show();
+                this.Hide();
+            }     
+
         }
 
         private void btn_Gristi_Click(object sender, EventArgs e)
@@ -253,16 +280,18 @@ namespace Restoranas.Forms
             tb_Kaina.Text = meniu.Where(x => x.Pavadinimas == cmb_PasirinktiPatiekala.Text).FirstOrDefault().Kaina.ToString();
         }
 
+        private bool ArKlientasPadavePakankamaiPinigu()
+        {
+            bool pakankamai = true;
+            if (double.Parse(label_PaskaiciuotaGraza.Text) < 0)
+            {
+                pakankamai = false;
+            }
+            return pakankamai;
+        }
 
         private void UzsakymoIrasymasIVisuUzsakymuFaila()
         {
-            if (double.Parse(label_PaskaiciuotaGraza.Text) < 0)
-            {
-                MessageBox.Show("Užsakymo suma didesnė nei paduota kliento suma. Apmokėti nepavyko");
-            }
-
-            if(double.Parse(label_PaskaiciuotaGraza.Text) >= 0)
-            {
                 string path = $@"C:\Users\petre\Desktop\CodeAcademy\Restoranas\VisiUzsakymai.txt";
 
                 string dgv = DGVtoString(dataGridView1, ';');
@@ -273,7 +302,6 @@ namespace Restoranas.Forms
                                       + "\n";
 
                 File.AppendAllText(path, uzsakymoInfo);
-            }            
         }
 
 

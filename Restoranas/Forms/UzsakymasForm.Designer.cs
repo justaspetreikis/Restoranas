@@ -238,10 +238,6 @@
             this.lbUzsakymoSuma.TabIndex = 17;
             this.lbUzsakymoSuma.Text = "Užsakymo suma:";
             // 
-            // uzsakymasRepozitorijaBindingSource
-            // 
-            this.uzsakymasRepozitorijaBindingSource.DataSource = typeof(Restoranas.Models.UzsakymasRepozitorija);
-            // 
             // label_KlientoPaduotaSuma
             // 
             this.label_KlientoPaduotaSuma.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

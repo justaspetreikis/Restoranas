@@ -1,15 +1,14 @@
-using Restoranas.Forms;
+﻿using Restoranas.Forms;
 using Restoranas.Models;
 using System.Drawing;
 
-namespace Restoranas
+namespace Restoranas.Forms
 {
     public partial class RestoranasForm : Form
     {
         public RestoranasForm()
         {
             InitializeComponent();
-
         }
         public static class ButtonClicked
         {
@@ -24,7 +23,8 @@ namespace Restoranas
         private UzsakymasForm sestasStaliukas = new UzsakymasForm();
         private UzsakymasForm septintasStaliukas = new UzsakymasForm();
         private UzsakymasForm astuntasStaliukas = new UzsakymasForm();
-        public void button1_Click(object sender, EventArgs e)
+
+        private void button1_Click(object sender, EventArgs e)
         {
             ButtonClicked.buttonClicked = (sender as Button).Text;
             if (!pirmasStaliukas.Visible)
@@ -38,7 +38,7 @@ namespace Restoranas
             this.Hide();
         }
 
-        public void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             ButtonClicked.buttonClicked = (sender as Button).Text;
             if (!antrasStaliukas.Visible)
