@@ -1,5 +1,4 @@
-﻿using Restoranas.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,15 +28,6 @@ namespace Restoranas.Models
         public List<Asortimentas> MaistoPatiekaluListas()
         {
             return MeniuListas;
-        }
-        public void PakeistiKaina()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void PridetiPreke()
-        {
-            throw new NotImplementedException();
         }
     }
 }
